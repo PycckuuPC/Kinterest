@@ -1,0 +1,586 @@
+body {
+  background-color: rgb(31, 36, 46);
+}
+a {
+  text-decoration: none;
+}
+
+/* баннер //////////////////////////////////////////*/
+.banner {
+  max-width: 1920px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(31, 36, 46);
+  border-bottom: #535353 solid;
+}
+/* end ///////////////////////////////////////////////*/
+
+/*здесь стили для MAIN PAGE котейнера/////////////////*/
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+/* end ///////////////////////////////////////////////*/
+
+/* для кнопок навигации */
+.conteinerMainNavButton {
+  display: flex;
+  margin-right: 40px;
+}
+
+/* кнопки и контент для VideoBar */
+.butNav {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  margin-top: 20px;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.butNav:hover {
+  background-color: white;
+  color: black;
+}
+
+.butNav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.plusButton {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  width: 30px;
+  height: 40px;
+  margin-top: 40px;
+}
+
+.plusButton:hover {
+  transform: scale(1.2);
+}
+/* Для текста в баре */
+.textBar {
+  color: whitesmoke;
+}
+
+.intro_contentNav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+}
+
+.py-16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* end ///////////////////////////////////////////////////*/
+
+/* контейнер слайдера ////////////////////////////////////*/
+.containerSlider {
+  display: flex;
+  width: 100vw;
+}
+/* end //////////////////////////////////////////////////*/
+
+/* стили для картинок слайдера ////////////////////////////*/
+.imgSlader {
+  margin: 30px;
+  max-width: 420px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+/* end ////////////////////////////////////////////////////*/
+
+/* для формы добавления //////////////////////////////////*/
+.AddContainer {
+  max-width: 1920px;
+  width: 100%;
+  background-color: white;
+  height: 350px;
+  border: 1px solid black;
+}
+/* end ////////////////////////////////////////////////////*/
+
+/* контейнер для карточек ///////////////////////////////////*/
+.containerAllBoard {
+  max-width: 1920px;
+  width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: flex-start; /* выравнивание по вертикали */
+  /* align-content: center; */
+  gap: 20px; /* расстояние между элементами */
+  margin: 0 auto; /* автоматическое центрирование */
+  max-width: 1200px; /* максимальная ширина блока */
+  margin-top: 5%;
+}
+/* end */
+
+.containerIntroBoard {
+  display: flex;
+  background-color: rgb(31, 36, 46);
+  height: 100vh;
+}
+
+.conteinerForContent {
+  margin-top: 150px;
+}
+
+/* для коментариев /////////////////////////////////////////*/
+.containerComment {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* end/////////////////////////////////////////////////////// */
+
+/* контейнер который заключает в себе форму для добавления, поиск и фильмы ////////////////////////////////*/
+.flexAddd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+}
+
+/*Это контейнер для фильмов на странице добавления*/
+.containerForFilm {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.AddContainerFilm {
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  justify-content: start;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.textForAdd {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+/*для выделения формы добавления и поиска */
+.AddContainerForm {
+  max-width: 1920px;
+  width: 100%;
+  background-color: #f0f6f4;
+  min-height: 50vh;
+}
+/* end */
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* для видео бара */
+.intro {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 3px solid rgb(43, 43, 43);
+}
+
+.introForMiniNav {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0,0,0,0.7); */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.video {
+  position: relative;
+  z-index: 1;
+}
+
+/* end */
+
+/* текст внури видео */
+.intro_contentText {
+  display: flex;
+  justify-content: start;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 600;
+  font-size: 25px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.comments {
+  margin-top: 50px;
+}
+
+.contentBlock1 {
+  margin-top: 40px;
+  background-color: rgb(31, 36, 46);
+  border-top: rgb(255, 255, 255);
+  border-bottom: rgb(255, 255, 255);
+  width: 100%;
+}
+.fonZ {
+  background-color: rgb(31, 36, 46);
+}
+
+.fonX {
+  background-color: rgb(31, 36, 46);
+  color: #ffffff;
+}
+.flexblock {
+  display: flex;
+}
+
+.contentBlock2 {
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(31, 36, 46);
+}
+
+.fonBlock2 {
+  /* background-color: #f4edb2; */
+}
+
+.butNav:hover {
+  background-color: white;
+  color: black;
+}
+
+.butNav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.plusButton {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+.py-16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block2 {
+  background-color: rgb(31, 36, 46);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.imgBLock {
+  height: 480px;
+}
+
+/* Для карточки доски */
+.cardBoardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 30px;
+  max-width: 250px;
+  padding: 10px;
+  gap: 1.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  color: #040404;
+  background-color: #ffffff;
+}
+
+.filmCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  width: 100%;
+
+  border-radius: 0.5rem;
+  padding: 7px;
+  background-color: rgb(255, 255, 255);
+}
+.filmCardFlex {
+  display: flex;
+}
+
+.avatarDiv {
+  display: flex;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 70px;
+}
+.avatar {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 60px; /* задаем ширину аватарки */
+  height: 60px; /* задаем высоту аватарки */
+  border-radius: 50%; /* делаем аватарку круглой */
+  object-fit: cover; /* обрезаем аватарку, чтобы она вписалась в круг */
+  object-position: center; /* выравниваем аватарку по центру */
+  border: 1px solid #535353; /* добавляем белую обводку вокруг аватарки */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* добавляем тень */
+}
+
+.avatarText {
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
+
+.buttonCard {
+  display: flex;
+}
+/*end*/
+
+/* ПОДВАЛ */
+.footer {
+  color: #ffffff;
+  display: flex;
+  max-width: 1920px;
+  height: auto;
+  width: 100%;
+  background-color: rgb(31, 36, 46);
+  border-top: 3px solid rgb(43, 43, 43);
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.containerIconFooter {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.icon {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 60px; /* задаем ширину аватарки */
+  height: 60px; /* задаем высоту аватарки */
+  border-radius: 50%; /* делаем аватарку круглой */
+  object-fit: cover; /* обрезаем аватарку, чтобы она вписалась в круг */
+  object-position: center; /* выравниваем аватарку по центру */
+  border: 1px solid #535353; /* добавляем белую обводку вокруг аватарки */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* добавляем тень */
+}
+
+.textFooter {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Copyright {
+  margin-top: 75px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  /* width: 100vw; */
+}
+.divGroup {
+  height: 100%;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.svggg {
+  margin-bottom: 20px;
+}
+
+/*end*/
+
+html {
+  background-color: rgb(31, 36, 46);
+}
+
+/* содержимое доски по кнопке перейти */
+
+.containerIntroBoard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.divUserInfo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 364px; */
+}
+
+.containerFilm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* end */
+
+.authCont {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(31, 36, 46);
+}
+
+/* кнопка подробнее */
+.but {
+  position: relative;
+  left: 40px;
+}
+/* end */
+/* надпись и стрелка для создания доски */
+.createBoard {
+  display: flex;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.arrow {
+  position: relative;
+  left: 220px;
+  top: -10px;
+}
+
+/*кнопки: удалить, изменить, перейти */
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+}
+/* end */
+
+/* для подписчиков и коментария */
+.textCommentModal {
+  font-weight: 700;
+  color: #3d3d3d;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.textSub {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.subscribersContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.butSub {
+  margin-right: 20px;
+}
+
+.subPozish {
+  position: absolute;
+  left: 1150px;
+  top: 170px;
+}
+/* end */
+
+/* для отобрабражения карточки при добавлении фильмаю */
+.filmMini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 10px;
+}
+
+.textForMini {
+  font-size: 15px;
+  margin: 7px;
+  font-weight: 600;
+}
+.textForAdd {
+  font-weight: 600;
+  font-size: 20px;
+}
+.butMini {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+/* end */
+
+.flexBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBut2 {
+  margin-left: 10px;
+}
