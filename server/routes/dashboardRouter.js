@@ -260,7 +260,7 @@ router.get('/movies', async (req, res) => {
 router.get('/favourite', async (req, res) => {
   try {
     const favourites = await Favourite.findAll({
-      where: { user_id: req.session.user.?id },
+      where: { user_id: req.session.user?.id },
     });
     const boards = await Dashboard.findAll({
       where: { id: favourites.map(el => el.board_id) },
