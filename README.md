@@ -55,12 +55,12 @@
 
 server/ Отвечает за back-end. Запуск в терминале командами:
 
-> cd server
-> npm i
-> npm start
+- > cd server
+- > npm i
+- > npm start
 
 client/ - front-end.
 
-> cd client
-> npm i
-> npm run dev
+- > cd client
+- > npm i
+- > npm run dev
