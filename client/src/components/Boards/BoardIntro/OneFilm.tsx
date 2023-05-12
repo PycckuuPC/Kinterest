@@ -14,6 +14,7 @@ import OneMovieCard from '../OneMovieCard';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '200px',
+    height: '510px',
     margin: '10px',
   },
   media: {
